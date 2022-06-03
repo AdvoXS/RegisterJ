@@ -1,0 +1,13 @@
+#set ($index = $NAME.indexOf('Object'))
+#set ($parent= $NAME.substring(0, $index))
+import biz.redsoft.ncore.system.Context;
+import biz.redsoft.ncore.gen.${parent};
+
+@SuppressWarnings("UnusedDeclaration")
+public class ${NAME} extends ${parent} {
+protected ${NAME}(Context con, String typeName) {
+super(con, typeName);
+}
+
+
+}
